@@ -4,7 +4,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
     public static void main(String[] args) {
-        
+        selecaoCandidatos();
     }
 
     static void selecaoCandidatos(){
@@ -14,8 +14,8 @@ public class ProcessoSeletivo {
         int candidatosSelecionados = 0;
         int candidatoAtual = 0;
         double salarioBase = 2000.0;
-
-        while(candidatosSelecionados <5 && candidatoAtual < candidatos.length){
+        System.out.println("teste");
+        while(candidatosSelecionados < 5 && candidatoAtual < candidatos.length ){
             String candidato = candidatos[candidatoAtual];
             double salarioPretendido = valorPretendido();
 
